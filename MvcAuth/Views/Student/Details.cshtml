@@ -1,0 +1,53 @@
+﻿@model MvcAuth.Models.StudentTbl
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>StudentTbl</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.HiddenFor(model => model.St_ID)
+        </dt>
+        <dt>
+            @Html.DisplayNameFor(model => model.St_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.St_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.St_Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.St_Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.St_Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.St_Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DepartmentTbl.Dep_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DepartmentTbl.Dep_Name)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.St_ID }) |
+    @Html.ActionLink("Delete", "Delete", new { id = Model.St_ID })
+</p>

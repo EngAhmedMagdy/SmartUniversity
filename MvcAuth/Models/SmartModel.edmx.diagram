@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c6d1231a276a4eb68b233b485093372a" Name="Diagram1">
+        <EntityTypeShape EntityType="SmartModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartModel.AdminTbl" Width="1.5" PointX="11.75" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartModel.AspNetRole" Width="1.5" PointX="5.75" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartModel.AspNetUserClaim" Width="1.5" PointX="10.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartModel.AspNetUserLogin" Width="1.5" PointX="10.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartModel.AspNetUser" Width="1.5" PointX="8" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartModel.CourseTbl" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartModel.DepartmentTbl" Width="1.5" PointX="3" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartModel.EventTbl" Width="1.5" PointX="14" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartModel.Exam_Result_Tbl" Width="1.5" PointX="7.5" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartModel.ExamTbl" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartModel.MapTbl" Width="1.5" PointX="14" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartModel.NewsTbl" Width="1.5" PointX="14" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartModel.ParkingTbl" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartModel.Post_Reply_Tbl" Width="1.5" PointX="9.75" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartModel.PostTbl" Width="1.5" PointX="7.5" PointY="13.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartModel.Prof_Lecture_TBL" Width="1.5" PointX="3" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartModel.Prof_Video_TBL" Width="1.5" PointX="3" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartModel.ProfessorTbl" Width="1.5" PointX="0.75" PointY="9.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartModel.QuestionsTbl" Width="1.5" PointX="5.25" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SmartModel.StudentTbl" Width="1.5" PointX="5.25" PointY="7" IsExpanded="true" />
+        <AssociationConnector Association="SmartModel.FK_EventTbl_AdminTbl" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartModel.FK_MapTbl_AdminTbl" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartModel.FK_NewsTbl_AdminTbl" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartModel.FK_CourseTbl_ProfessorTbl" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartModel.FK_DepartmentTbl_ProfessorTbl" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartModel.FK_StudentTbl_DepartmentTbl" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartModel.FK_Exam_Result_Tbl_ExamTbl" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartModel.FK_Exam_Result_Tbl_StudentTbl" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartModel.FK_ExamTbl_ProfessorTbl" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartModel.FK_QuestionsTbl_ExamTbl" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartModel.FK_Post_Reply_Tbl_PostTbl" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartModel.FK_Post_Reply_Tbl_StudentTbl" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartModel.FK_PostTbl_StudentTbl" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartModel.FK_Prof_Lecture_TBL_ProfessorTbl" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartModel.FK_Prof_Video_TBL_ProfessorTbl" ManuallyRouted="false" />
+        <AssociationConnector Association="SmartModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

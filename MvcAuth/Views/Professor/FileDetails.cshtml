@@ -1,0 +1,35 @@
+﻿@model IEnumerable<MvcAuth.Models.Prof_Lecture_TBL>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ProfessorTbl.Prof_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Prof_Lecture_Name)
+        </th>
+        <th>
+           
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+      
+        <td>
+            @Html.DisplayFor(modelItem => item.ProfessorTbl.Prof_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Prof_Lecture_Name)
+        </td>
+        <td>
+            @Html.ActionLink("Downlaod", "DownLoadFile", new { id = item.Prof_Lecture_ID })
+        </td>
+    </tr>
+}
+
+</table>
